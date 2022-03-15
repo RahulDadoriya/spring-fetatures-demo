@@ -1,0 +1,11 @@
+package com.rdodo.springmvc.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MyFirstController {
+
+	public String firstView() {
+		return "firstview";
+	}
+}

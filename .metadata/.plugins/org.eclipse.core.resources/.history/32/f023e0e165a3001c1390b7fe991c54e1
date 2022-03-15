@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- Setter Injection pojo class must have setter method for properties -->
+	<!-- <bean id="customer" class="com.rdodo.springcore.model.Customer"> <property 
+		name="customerId" value="101"></property> <property name="name" value="Alex 
+		Browning"></property> <property name="address" ref="address"></property> 
+		</bean> <bean id="address" class="com.rdodo.springcore.model.Address"> <property 
+		name="city" value="New York"></property> </bean> -->
+
+	<!-- Constructor Injection Pojo class must have parameterised constructor -->
+	
+	<bean id="customer" class="com.rdodo.springcore.model.Customer">
+		<constructor-arg type="int" value="201"></constructor-arg>
+		<constructor-arg value="Ryan Jon"></constructor-arg>
+		<constructor-arg ref="address"></constructor-arg>
+		<constructor-arg ref="listOfAddress"></constructor-arg>
+	</bean>
+	<bean id="address" class="com.rdodo.springcore.model.Address">
+		<constructor-arg value="New Delhi"></constructor-arg>
+	</bean>
+	
+	
+	<bean id="listOfAddress" class="com.rdodo.springcore.model.CheckIns">
+		<constructor-arg value="Delhi, Mumbai, Kolkata"></constructor-arg>
+	</bean>
+	
+
+
+
+
+</beans>

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Mar 11 13:56:59 IST 2022
+org.eclipse.jst.j2ee.server\:spring-mvc=C\:\\Software\\sts\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\spring-mvc
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\RahulD6\\.m2\\repository\\org\\springframework\\spring-web\\5.3.15\\spring-web-5.3.15.jar=C\:\\Software\\sts\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\spring-mvc\\WEB-INF\\lib\\spring-web-5.3.15.jar

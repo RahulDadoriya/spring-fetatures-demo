@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<bean id="customer" class="com.rdodo.springcore.model.Customer">
+		<constructor-arg type="int" value="201"></constructor-arg>
+		<constructor-arg value="Ryan Jon"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<ref bean="add1" />
+				<ref bean="add2" />
+				<ref bean="add3" />
+				<ref bean="add4" />
+				<ref bean="add5" />
+			</list>
+		</constructor-arg>
+
+	</bean>
+
+	<bean id="add1" class="com.rdodo.springcore.model.Address">
+		<constructor-arg value="Agartala"></constructor-arg>
+	</bean>
+	<bean id="add2" class="com.rdodo.springcore.model.Address">
+		<constructor-arg value="Shivpuri"></constructor-arg>
+	</bean>
+	<bean id="add3" class="com.rdodo.springcore.model.Address">
+		<constructor-arg value="Kota"></constructor-arg>
+	</bean>
+	<bean id="add4" class="com.rdodo.springcore.model.Address">
+		<constructor-arg value="Gwalior"></constructor-arg>
+	</bean>
+	<bean id="add5" class="com.rdodo.springcore.model.Address">
+		<constructor-arg value="Bikaner"></constructor-arg>
+	</bean>
+</beans>

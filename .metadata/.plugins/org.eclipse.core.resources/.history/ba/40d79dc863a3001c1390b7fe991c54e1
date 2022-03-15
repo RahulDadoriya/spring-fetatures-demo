@@ -1,0 +1,5 @@
+package com.rdodo.springcore.model;
+
+public class CheckIns {
+
+}

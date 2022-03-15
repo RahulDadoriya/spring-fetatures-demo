@@ -1,0 +1,46 @@
+package com.rdodo.springcore;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+import com.rdodo.springcore.model.Address;
+import com.rdodo.springcore.model.Customer;
+
+/**
+ * Demo for Spring Autowire Dependency Injection
+ * by default compiler uses autowire as byName this we can see 
+ * when we have multiple properties of same type
+ * 
+ * byType = gives exception when we have multiple objects of same type.
+ * byName = works fine in every situation only when we have same name defined in
+ * 			pojo class and xml file are same
+ * 
+ * Autowire can only be possible with object type constructor, setter method
+ * 
+ * It's important to add xmlns:context="http://www.springframework.org/schema/context" in beans tag
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+    	
+    	//BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("spring.xml"));
+    	
+		/*
+		 * Customer customer = beanFactory.getBean("customer", Customer.class); Address
+		 * address = beanFactory.getBean("address", Address.class);
+		 */    	
+    	//System.out.println (customer);
+    	
+    	ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml"); 
+    	Customer customer = applicationContext.getBean("customer", Customer.class);
+    	System.out.println (customer);
+    	
+    
+    }
+}

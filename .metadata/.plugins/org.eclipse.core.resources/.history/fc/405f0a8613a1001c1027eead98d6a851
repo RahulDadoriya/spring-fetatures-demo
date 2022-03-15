@@ -1,0 +1,5 @@
+package com.rdodo.springmvc.controller;
+
+public class MyFirstController {
+
+}
