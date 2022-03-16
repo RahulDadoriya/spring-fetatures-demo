@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
   <module moduleId="org.eclipse.jst.j2ee.server:spring-mvc" serverId="Pivotal tc Server Developer Edition v4.0"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:spring-mvc-java-config" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:spring-mvc-poc"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:spring-mvc-javaconfig" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>

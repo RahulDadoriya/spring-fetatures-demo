@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="customer" class="com.rdodo.springcore.model.Customer"
+init-method="myInitMethod" destroy-method="myDestroyMethod">
+	<constructor-arg type="int" value="333"></constructor-arg>
+	<constructor-arg value="Sitaraman"></constructor-arg>
+	<constructor-arg ref="address"></constructor-arg>
+</bean>
+<bean id="address" class="com.rdodo.springcore.model.Address">
+<constructor-arg value="Naya Muholla"></constructor-arg>
+</bean>
+
+</beans>
